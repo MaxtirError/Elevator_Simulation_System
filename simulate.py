@@ -9,6 +9,7 @@ ELEVATOR_HEIGHT = 150
 ELEVATOR_LENGTH = 150
 PERSON_LENGTH = 50
 PERSON_HEIGHT = 100
+SIMULATETIME = 10000
 class MainUi(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
@@ -17,7 +18,7 @@ class MainUi(QtWidgets.QMainWindow):
         self.clock = 0
         file = open("simulation.txt")
         self.event = []
-        for i in range(10001):
+        for i in range(SIMULATETIME + 1):
             self.event.append([])
         self.personlabel = []
         self.waitqueue = []
@@ -140,7 +141,7 @@ class MainUi(QtWidgets.QMainWindow):
 
     def Activate(self):
         self.clock = self.clock + 1
-        if self.clock > 10000:
+        if self.clock > SIMULATETIME:
             exit()
         for op in self.event[self.clock]:
             print(self.clock)
