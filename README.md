@@ -5,7 +5,7 @@ hw for data structure, simulate an elevator system.With Gui.
 
 代码主要由ElevatorSimulation.cpp对电梯系统的各种行为进行模拟，并由此产生电梯的行为信息存放在simulation.txt中，在使用simulate.py制作GUI界面演示。
 
-![image-20211118092622359](readmeimgae\代码框架.png)
+![image-20211118092622359](readmeimgae/代码框架.png)
 
 ## 实验环境
 
@@ -169,7 +169,7 @@ class ElevatorSystem {
 
 电梯系统的整体控制逻辑大致如下图所示，长方形中的是各种方法，而菱形中的则是在Activate函数里的各种时钟中断，以及对应中断触发的方法
 
-![image-20211118102606279](readmeimgae\电梯系统控制流程.png)
+![image-20211118102606279](readmeimgae/电梯系统控制流程.png)
 
 ## 运行及可视化GUI
 
@@ -199,7 +199,7 @@ Clock 1 7 St Ed Time Elevator_id
 
 为方便检查模拟的时间加快了10倍。模拟的效果如下
 
-![image-20211118103940500](readmeimgae\模拟预览.png)
+![image-20211118103940500](readmeimgae/模拟预览.png)
 
 中间为人的等待队列，标注了人的id和上下的方向，左右的INSIDE记录了电梯中人的编号。
 
